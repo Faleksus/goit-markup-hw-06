@@ -230,7 +230,8 @@ button {
     height: 50px; */
     min-width: 216px;
     padding: 10px 32px;
-    background: var(--brand-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
@@ -631,6 +632,7 @@ button {
 
 .joing {
     margin-bottom: 12px;
+    margin-right: 93px;
 }
 
 .joing-title {
@@ -670,6 +672,58 @@ button {
     fill: var(--white-color);
 }
 
+.subscribe-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-bottom: 20px;
+}
+
+.subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px
+}
+
+.subscribe-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    padding-left: 16px;
+}
+
+.button-subscribe-footer {
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    padding: 10px 28px;
+}
+
+.button-subscribe-footer:hover,
+.button-subscribe-footer:focus {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
+
+.button-subscribe-footer-icon {
+    fill: var(--white-color);
+}
+
 /* ==================== /FOOTER ==================== */
 
 /* ==================== BACKDROP ==================== */
@@ -701,10 +755,11 @@ button {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 528px;
-    height: 581px;
+    /* height: 581px; */
     background-color: rgb(255, 255, 255);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    padding: 40px;
 }
 
 .modal-close-btn {
@@ -745,6 +800,7 @@ button {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--black-color);
+    margin-bottom: 12px;
 }
 
 /* ==================== /MODAL ==================== */
@@ -778,7 +834,7 @@ button {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
 
-    /* padding-left: 42px; */
+    padding-left: 42px;
     transition: border-color var(--transition-dur-and-func);
 }
 
@@ -795,16 +851,78 @@ button {
     display: block;
     width: 18px;
     height: 18px;
-    
-    /* transition: background-color var(--transition-dur-and-func); */
-}
-
-.modal-icon-svg {
-    fill: var(--black-color);
 }
 
 .modal-form-input:focus + .modal-form-icon {
     fill: var(--brand-color);
-  }
+}
+
+.modal-form-message {
+    width: 100%;
+    height: 120px;
+    resize: none;
+    padding: 12px 16px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    transition: border-color var(--transition-dur-and-func);
+}
+  
+.modal-form-message:focus {
+    outline: none;
+    border-color: var(--brand-color);
+}
+
+.modal-form-check-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.modal-form-own-check {
+    border: 1px solid #303030;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.modal-form-check:checked + .modal-form-own-check {
+    background-color: var(--brand-color);
+    border-color: var(--brand-color);
+}
+
+.modal-form-check:focus + .modal-form-own-check {
+    outline: 2px solid var(--brand-color);
+    border: none;
+}
+
+.modal-form-own-check-icon {
+    display: none;
+    fill: var(--brand-color);
+}
+
+.modal-form-check:checked + .modal-form-own-check .modal-form-own-check-icon {
+    display: block;
+}
+
+.modal-form-btn {
+    min-width: 200px;
+    align-self: center;
+    padding: 10px 52px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.modal-form-btn:hover,
+.modal-form-btn:focus {
+  background-color: var(--brand-color);
+  color: var(--white-color);
+}
 
 /* ==================== /MODAL FORM ==================== */
