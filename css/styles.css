@@ -697,6 +697,14 @@ button {
     border-radius: 4px;
     background-color: #2F303A;
     padding-left: 16px;
+    
+}
+
+.subscribe-form-input:hover,
+.subscribe-form-input:focus {
+    cursor: pointer;
+    outline: none;
+    border-color: var(--brand-color);
 }
 
 .button-subscribe-footer {
@@ -833,12 +841,13 @@ button {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-
     padding-left: 42px;
     transition: border-color var(--transition-dur-and-func);
 }
 
+.modal-form-input:hover,
 .modal-form-input:focus {
+    cursor: pointer;
     outline: none;
     border-color: var(--brand-color);
 }
@@ -867,7 +876,9 @@ button {
     transition: border-color var(--transition-dur-and-func);
 }
   
+.modal-form-message:hover,
 .modal-form-message:focus {
+    cursor: pointer;
     outline: none;
     border-color: var(--brand-color);
 }
@@ -889,6 +900,7 @@ button {
     border-color: var(--brand-color);
 }
 
+.modal-form-check:hover + .modal-form-own-check,
 .modal-form-check:focus + .modal-form-own-check {
     outline: 2px solid var(--brand-color);
     border: none;
